@@ -5,7 +5,7 @@
 using namespace std;
 int main()
 {
- float x1, y1, x2, y2;
+ float x1, y1, x2, y2, z;
  cout <<"rrastoyanie mejdu dvuma tochkami s zadanimi koordinatami (x1, y1) & (x2, y2)"<< "\nx1 =";
  cin >> x1;
  cout << "y1 =";
@@ -14,8 +14,8 @@ int main()
  cin>> x2;  
  cout << "y2 =";
  cin >> y2;  
- float result = sqrt((pow(fabs(x1-x2), 2) + pow(fabs(y1-y2), 2)));
- cout << result <<endl;
+ z = sqrt((pow(fabs(x1-x2), 2) + pow(fabs(y1-y2), 2)));
+ cout << z;
  return 0;
 }
 //2. Даны три точки A, B, C на числовой оси. Найти длины отрезков AC и BC и их сумму.
@@ -36,4 +36,21 @@ int main()
   Sum= AC+BC;
   cout <<"AC="<<AC<<"\nBC="<<BC<<"\nSum="<<Sum;
   return 0 ;
+}
+//3.Даны три точки A, B, C на числовой оси. Точка C расположена между точками A и B.Найти произведение длин отрезков AC и BC
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main()
+{
+	float A, B, C, otvet;
+	cout << "Chtobi naiti proizvedenie dlinn otrezkov AC & BC pri uslovii chto tochka C rasspolozhena mejdu A & B, vvedite tochki \nA=";
+		cin >> A;
+	cout << "B=";
+	cin >> B;
+	cout << "C=";
+	cin >> C;
+	otvet = fabs(A - C) * fabs(B - C);
+	cout <<"proizvedenie =" << otvet;
+return 0;
 }
