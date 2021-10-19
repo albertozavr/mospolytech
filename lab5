@@ -1,0 +1,39 @@
+//Задание к теме 5.
+//1. Найти расстояние между двумя точками с заданными координатами (x1, y1) и (x2, y2)
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main()
+{
+ float x1, y1, x2, y2;
+ cout <<"rrastoyanie mejdu dvuma tochkami s zadanimi koordinatami (x1, y1) & (x2, y2)"<< "\nx1 =";
+ cin >> x1;
+ cout << "y1 =";
+ cin >> y1 ;  
+ cout << "x2 =";
+ cin>> x2;  
+ cout << "y2 =";
+ cin >> y2;  
+ float result = sqrt((pow(fabs(x1-x2), 2) + pow(fabs(y1-y2), 2)));
+ cout << result <<endl;
+ return 0;
+}
+//2. Даны три точки A, B, C на числовой оси. Найти длины отрезков AC и BC и их сумму.
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main()
+{
+  float A, B, C, AC, BC, Sum;
+  cout <<"vvedite tri tochki A B C chtobi naiti dlinnu AB & BC & summu"<<"\nA=";
+  cin >> A;
+  cout <<"B=";
+  cin >> B;
+  cout <<"C=";
+  cin >> C;
+  AC=fabs(C-A);
+  BC=fabs(C-B);
+  Sum= AC+BC;
+  cout <<"AC="<<AC<<"\nBC="<<BC<<"\nSum="<<Sum;
+  return 0 ;
+}
