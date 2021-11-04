@@ -63,16 +63,68 @@ int main()
 using namespace std;
 int main()
 {
-  float V1, V2, S, T, S2;
-  cout <<"vvedite skorost' 1avtomobilya, 2avtomobilya,rasstoyanie mejdu nimi chtobi naiti rasstoyanie mejdu nimi cheres T chasov\nV1=";
-  cin>>V1;
-  cout <<"V2=";
-  cin>>V2
-  cout<<"S=";
-  cin>> S;
-  cout<< "T=";
-  cin>>T;
-  S2=fabs(S-((V1+V2)*T));
-  cout<<"rasstoyanie mejdu avtomobilyami="<<S2;
-  return 0;
+	
+	float V1, V2, S, T, S2;
+	cout <<"vvedite skorost' 1avtomobilya, 2avtomobilya,rasstoyanie mejdu nimi chtobi naiti rasstoyanie mejdu nimi cheres T chasov\nV1 (km/h)=";
+	cin>>V1;
+	cout <<"V2 (km/h)=";
+	cin>>V2;
+	cout<<"S (km)=";
+	cin>> S;
+	cout<< "T (h)=";
+	cin>>T;
+	S2=fabs(S+((V1+V2)*T));
+	cout<<"rasstoyanie mejdu avtomobilyami (km)="<<S2;
+	return 0;
+}
+
+
+
+////////////////////////////////////5. Решить линейное уравнение A·x + B = 0, заданное своими коэффициентами A и B (коэффициент A не равен 0).///////////////////////////////////
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+	
+	float A,B,x;
+	cout <<"chtobi reshit uravnenie A*x + B = 0 vvedite\nA=";
+	cin >>A;
+	cout <<"B=";
+	cin >>B;
+
+	x=-B/A;
+	cout<<"x="<<x;
+	return 0;
+}
+
+
+
+//////////////////////////////////////////////6. Найти решение системы линейных уравнений вида A1·x + B1·y = C1, A2·x + B2·y = C2,///////////////////////////////////////////////
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	
+	float A1,B1,C1,A2,B2,C2,x,y,D;
+	cout <<"chtobi reshit sistemu uravneniy\nA1*x + B1*y = C1\nA2*x + B2*y = C2\nvvedite peremennie\nA1=";
+	cin >>A1;
+	cout <<"B1=";
+	cin >>B1;
+	cout <<"C1=";
+	cin >>C1;
+	
+	cout <<"A2=";
+	cin >>A2;
+	cout <<"B2=";
+	cin >>B2;
+	cout <<"C2=";
+	cin >>C2;
+	
+	D= A1*B2 - A2*B1;
+	x = (C1*B2 - C2*B1)/D;
+	y = (A1*C2 - A2*C1)/D;
+	cout<<"x="<<x<<"\ny="<<y;
+	return 0;
 }
