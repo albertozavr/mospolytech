@@ -1,0 +1,59 @@
+//////////////////////////////////////////////////////////////////////////////////Задание к теме 7.//////////////////////////////////////////////////////////////////////////////
+///////////////////1. Дано значение угла α в градусах (0 < α < 360). Определить значение этого же угла в радианах, учитывая, что 180◦ = π радианов.//////////////////////////////
+
+
+#include <cmath>
+#include <iostream>
+using namespace std;
+main()
+{
+	float x,y,z;
+	cout <<"vvedite ugol v gradusah chtobi perevesti ego v radiani  "<<"\na(v gradusah)=";
+	cin>>x;
+	y=x/180;
+	z=(M_PI*x)/180;
+	cout<<"a(v radianah)="<<z<<"\na(v radianah)="<<y<<"pi";
+	return 0;
+}
+
+///////////////////2. Дано значение угла α в радианах (0 < α < 2·π). Определить значение этого же угла в градусах, учитывая, что 180◦ = π радианов///////////////////////////////
+
+
+#include <cmath>
+#include <iostream>
+using namespace std;
+main()
+{
+	float x,y,z;
+	cout <<"vvedite ugol v radianah chtobi perevesti ego v gradusi  "<<"\na(v radianah)=";
+	cin>>x;
+	y=(x*180)/M_PI;
+	cout<<"a(v gradusah)="<<y;
+	return 0;
+}
+
+
+//////////////////////////////////////3. Известно, что X кг конфет стоит A рублей. Определить, сколько стоит 1 кг и Y кг этих же конфет./////////////////////////////////////////
+
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	float x,y,z,a,b;
+	cout << "vvedite kilogrammi x=";
+	cin >> x;
+	cout << "vvedite cenu a=";
+	cin >> a;
+	cout << "vvedite kilogrammi y=";
+	cin >> y;
+	z = a/x;
+	b = z*y;
+	cout << "cena 1 kg = " << z<<endl;
+	cout << y << "kg stoit -" << b;
+	return 0;
+}
+
+
+
+///////////////////////////////
