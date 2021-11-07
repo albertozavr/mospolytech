@@ -34,14 +34,14 @@ int main()
 {
 	
 	int a,b,c;
-	cout<<"vvedite A & B & C chtobi proverit vernost neravenstva \nA=";
+	cout<<"vvedite A & B & C chtobi proverit vernost neravenstva A<B<C \nA=";
 	cin >>a;
 	cout<<"B=";
 	cin >>b;
 	cout<<"C=";
 	cin >>c;
 	
-	if (a < b < c ) {
+	if (a < b && b < c ) {
 		cout<<"ravenstvo verno";
 	}
 	else {
