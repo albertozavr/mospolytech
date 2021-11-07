@@ -55,13 +55,162 @@ int main()
 
 /////////////////////////////////3. Дано целое положительное число. Проверить истинность высказывания: «Данное число является четным двузначным».////////////////////////////////
 
+
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	
+	int a;
+	cout<<"vvedite chislo chtobi proverit' chetnost'\n";
+	cin >>a;
+	
+	
+	if (a%2==0 && a>=10 && a<100 ) {
+		cout<<"chislo chetnoe i dvuhznachnoe";
+	}
+	else {
+		if (a%2!=0 && a>=10 && a<100){
+		cout<<"chislo nechetnoe i dvuhznachnoe";
+	}
+	else{
+		if (a%2==0){
+		cout<<"chilo chetnoe";
+	}
+	else{
+		cout<<"chislo nechetnoe";
+	}
+	}
+	}
+
+	return 0;
+}
+
+
+
 ////////////////////4. Дано трехзначное число. Проверить истинность высказывания: «Цифры данного числа образуют возрастающую или убывающую последовательность».//////////////////
+
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	
+	int a,b,c,d;
+	cout<<"vvedite trekhznachnoe chislo chtoby proverit' istinnost' vyskazyvaniya: \nCifry dannogo chisla obrazuyut vozrastayushchuyu ili ubyvayushchuyu posledovatel'nost'\n";
+	cin >>a;
+	
+	b=a/100;
+	c=(a%100)/10;
+	d=a%10;
+	
+	
+	if (b < c && c < d ) {
+		cout<<"\nvozrastayushaya posledovatelnost'";
+	}
+	else {
+		if(b > c && c > d){
+			cout<<"\nubivayushaya posledovatelnost'";
+		}
+		else{
+			cout<<"\npoprobuy snova";
+		}
+	}
+
+	
+	return 0;
+}
+
+
 
 /////////////////////////5. Дано четырехзначное число. Проверить истинность высказывания: «Данное число читается одинаково слева направо и справа налево».///////////////////////
 
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	
+	int a,b,c,d,e;
+	cout<<"vvedite chetyrekhznachnoe chislo chtoby proverit' istinnost' vyskazyvaniya: \Dannoe chislo chitaetsya odinakovo sleva napravo i sprava nalevo\n";
+	cin >>a;
+	
+	b=a/1000;
+	c=(a%1000)/100;
+	d=(a%100)/10;
+	e=a%10;
+	
+	
+	if (b==e && c==d ) {
+		cout<<"\nzerkal'noe chislo";
+	}
+	else{
+		cout<<"\nnezerkal'noe choslo";
+	}
+	
+	
+	return 0;
+}
+
+
 ////6. Даны целые числа a, b, c, являющиеся сторонами некоторого треугольника. Проверить истинность высказывания: «Треугольник со сторонами a, b, c является прямоугольным»./////
+
+
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+	
+	int a,b,c,d;
+	cout <<"vvedite celye chisla a, b, c, yavlyayushchiesya storonami nekotorogo treugol'nika chtoby proverit' istinnost' vyskazyvaniya:\nTreugol'nik so storonami a, b, c yavlyaetsya pryamougol'nym\nA=";
+	cin >>a;
+	cout <<"B=";
+	cin >>b;
+	cout <<"C=";
+	cin >>c;
+	
+	d=sqrt(a*a+b*b);
+	
+	if (c==d) {
+		cout<<"\ntreugolnik pryamougol'ny";
+	}
+	else{
+		cout<<"\ntreugolnik nepryamougol'ny";
+	}
+	
+	
+	return 0;
+}
+
 
 /////////////////////////////////7. Даны целые числа a, b, c. Проверить истинность высказывания: «Существует треугольник со сторонами a, b, c».//////////////////////////////////
 
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	
+	int a,b,c,d,e;
+	cout <<"vvedite celye chisla a, b, c chtoby proverit' istinnost' vyskazyvaniya: \nSushchestvuet treugol'nik so storonami a, b, c»\nA=";
+	cin >>a;
+	cout <<"B=";
+	cin >>b;
+	cout <<"C=";
+	cin >>c;
+	
+	
+	if ((a+b)>c && (a+c)>b && (b+c)>a) {
+		cout<<"\ntakoy treugolnik sushestvuet";
+	}
+	else{
+		cout<<"\ntakoy treugolnik nesushestvuet";
+	}
+	
+	
+	return 0;
+}
 /////КОНЕЦ////КОНЕЦ////КОНЕЦ////КОНЕЦ////КОНЕЦ////КОНЕЦ////КОНЕЦ////КОНЕЦ////КОНЕЦ////КОНЕЦ////КОНЕЦ////КОНЕЦ////КОНЕЦ////КОНЕЦ////КОНЕЦ////КОНЕЦ////КОНЕЦ////КОНЕЦ////КОНЕЦ/////
 
