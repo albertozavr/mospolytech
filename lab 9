@@ -29,7 +29,7 @@ int main()
 {
 	
 	int den,don;
-	cout <<"vvedite nomer dnya chtobi uznat' rfrjq den nedeli bil v eot den \n\n";
+	cout <<"vvedite nomer dnya chtobi uznat' kakoy den nedeli bil v eot den \n\n";
 	cin >>den;
 	
 	don= den%7;
@@ -45,4 +45,69 @@ int main()
 /////////////////////////////Определить номер дня недели для K-го дня года, если известно, что в этом году 1 января было днем недели с номером //////////////////////////////////
 
 
+#include <iostream>
+using namespace std;
+int main()
+{
+	
+	int K,N,k;
+	cout<<"\n1-ponedelnik   2-vtornik   3-sreda\n4-chetverg     5-pyatnitsa    6-subbota     7-voskresen'e\n";
+	cout <<"\nvvedite nomer dnya i nomer nedeli chtobi uznat' rfrjq den nedeli bil v eot den \n\n";
+	cin >>K;
+	cin >>N;
+	
+	k= ((K+N-2)%7)+1;
+	
+	cout <<"nomer = "<<k;
+	
+	return 0;
+}
 
+///////4. Даны целые положительные числа A, B, C. На прямоугольнике размера A × B размещено максимально возможное количество квадратов со стороной C (без наложений). ///////////
+/////////////////////////////Найти количество квадратов, размещенных на прямоугольнике, а также площадь незанятой части прямоугольника.//////////////////////////////////////////
+
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	
+	int a,b,c,s,n;
+	cout<<"vvedite storoni pryamougolnika a & b chtobi uznat'skolko kvadratov c pomestyatsa\na=";
+	cin >>a;
+	cout <<"b=";
+	cin >>b;
+	cout <<"c=";
+	cin >>c;
+	
+	s=(a*b)/(c*c);
+	n=(a*b)%(c*c);
+	
+	cout <<"chislo kvadratov = "<<s<<"\nostatok ploshadi ="<<n;
+	
+	return 0;
+}	
+
+
+//////5. Дан номер некоторого года (целое положительное число). Определить соответствующий ему номер столетия, учитывая, что, к примеру, началом 20 столетия был 1901 год////////
+
+
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	
+	int a,b;
+	cout<<"vvedite god chtobi opredelit sootvetsvyushiy nomer stoletiya \n";
+	cin >>a;
+	
+	b=(a/100)+1;
+	
+	cout <<"nomer stoletiya = "<<b;
+	
+	return 0;
+}	
+
+
+/////////////////////////////////////////////////////////////////////////////////////КОНЕЦ///////////////////////////////////////////////////////////////////////////////////////
