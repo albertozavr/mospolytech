@@ -1,0 +1,89 @@
+//1. Даны две переменные целого типа: A и B. Если их значения не равны, то присвоить каждой переменной большее из этих значений, а если равны, 
+//то присвоить переменным нулевые значения. Вывести новые значения переменных A и B.
+
+#include <iostream>
+using namespace std;
+main()
+{
+	int a,b;
+	cout<<"Vvedite a i b \na=";
+	cin>>a;
+	cout<<"b=";
+	cin>>b;
+	if (a == b){
+		a=0;
+		b=0;
+		cout<<"\na="<<a<<"\nb="<<b;
+	}
+	else if (a > b){
+			b=a;
+			cout<<"a="<<a<<"\nb="<<b;
+	}
+	else if (a < b){
+			a = b;
+			cout<<"a="<<a<<"\nb="<<b;
+		}
+	else{
+		cout<<"no result";
+		
+	}
+	
+	return 0;
+}
+
+//2. Даны три числа. Найти сумму двух наибольших из них
+
+#include <iostream>
+using namespace std;
+main()
+{
+	int a,b,c;
+	cout<<"vvedite tri chisla \na=";
+	cin>>a;
+	cout<<"b=";
+	cin>>b;
+	cout<<"c=";
+	cin>>c;
+	
+	if (b <= c && b <= a) {
+		cout << a + c;
+	}
+	else {
+		if (a <= c && a <= b) {
+			cout << b + c;
+		}
+		else {
+			cout << b + a;
+		}
+	}
+}
+
+
+//
+
+#include <iostream>
+#include <math.h>
+using namespace std;
+main()
+{
+	int xa,xb,xc,ya,yb,yc;
+	cout<<"na ploskosti tri tochki vvedite koordinati chtobi opredelit kakaya tochka blizhe k A  \nXa=";
+	cin>>xa;
+	cout<<"Ya=";
+	cin>>ya;
+	cout<<"Xb=";
+	cin>>xb;
+	cout<<"Yb=";
+	cin>>yb;
+	cout<<"Xc=";
+	cin>>xc;
+	cout<<"Yc=";
+	cin>>yc;
+		float longca = sqrt((xc-xa)*(xc-xa)+(yc-ya)*(yc-ya));
+		float longba = sqrt((xb-xa)*(xb-xa)+(yb-ya)*(yb-ya));
+	if (longba < longca) {
+		cout<<"Tochka B blizhe "<<longba;
+	} else{
+		cout<<"Tochka C blizhe "<<longca;
+	}
+}
