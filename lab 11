@@ -59,7 +59,7 @@ main()
 }
 
 
-//
+//3. На плоскости расположены три точки: A, B, C. Определить, какая из двух последних точек (B или C) расположена ближе к A, и вывести эту точку и ее расстояние от точки A.
 
 #include <iostream>
 #include <math.h>
@@ -87,3 +87,129 @@ main()
 		cout<<"Tochka C blizhe "<<longca;
 	}
 }
+
+//4. Даны координаты точки, не лежащей на координатных осях OX и OY. Определить номер координатной четверти, в которой находится данная точка
+
+#include <iostream>
+using namespace std;
+main()
+{
+	int x,y;
+	cout<<"vvedie koordinati tochki \nX=";
+	cin>>x;
+	cout<<"Y=";
+	cin>>y;
+	
+	
+	if (x>0 && y>0) {
+		cout <<"1 chetvert";
+	}
+	else {
+		if (x<=0 && y>=0) {
+			cout <<"2 chetvert";
+		}
+		else {
+			if (x<=0 && y<=0){
+				cout<<"3 chetvert";
+			}
+			else {
+				if(x>=0 && y>=0){
+					cout<<"4 chetvert";
+				}
+				else{
+					cout<<"oshibka";
+				}
+			}
+		}
+	}
+	return 0;
+}
+
+//5. Дано целое число. Вывести его строку-описание вида «отрицательное четное число», «нулевое число», «положительное нечетное число» и т. д.
+
+#include <iostream>
+using namespace std;
+main()
+{
+	int x;
+	cout<<"vvedie chislo \n";
+	cin>>x;
+	
+	if (x>0 && x%2==0) {
+		cout <<"polozhitelnoe chetnoe chislo";
+	}
+	else {
+		if (x>0 && x%2!=0 ) {
+			cout <<"polozhitelnoye nechetnoe chislo";
+		}
+		else {
+			if (x==0){
+				cout<<"nulevoe chislo";
+			}
+			else {
+				if(x<0 && x%2==0){
+					cout<<"otricatelnoye chetnoye chislo";
+				}
+				else{
+					if (x<0 && x!=0){
+					cout<<"otricatelnoye nechetnoye chislo";
+					}
+					else{
+						cout<<"oshibka";
+				}
+			}
+		}
+	}
+	return 0;
+}
+
+//6. Дано целое число, лежащее в диапазоне 1–999. Вывести его строкуописание вида «четное двузначное число», «нечетное трехзначное число» и т. д.
+
+
+#include <iostream>
+using namespace std;
+main()
+{
+	int x;
+	cout<<"vvedie chislo ot 0-999 \n";
+	cin>>x;
+	
+	if (x>0 && x<10 && x%2==0) {
+		cout <<"odnoznachnoe chetnoe chislo";
+	}
+	else {
+		if (x>0 && x<10 && x%2!=0 ) {
+			cout <<"odnoznachnoye nechetnoe chislo";
+		}
+		else {
+			if (x==0){
+				cout<<"nulevoe chislo";
+			}
+			else {
+				if(x>=10 && x<100 && x%2==0){
+					cout<<"dvuznachnoye chetnoye chislo";
+				}
+				else {
+					if (x>=10 && x<100 && x!=0){
+						cout<<"dvuznachnoye nechetnoye chislo";
+					}
+					else {
+						if (x>=100 && x <1000 && x%2==0){
+							cout<<"trehznachnoye chetnoye chislo";
+						}
+						else {
+							if (x>=100 && x <1000 && x%2!=0){
+								cout<<"trehznachnoye nechetnoye chislo";
+							}
+							else{
+								cout<<"oshibka";
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	return 0;
+}
+
