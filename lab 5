@@ -31,7 +31,7 @@ using namespace std;
 int main()
 {
   float A, B, C, AC, BC, Sum;
-  cout <<"vvedite tri tochki A B C chtobi naiti dlinnu AB & BC & summu"<<"\nA=";
+  cout <<"vvedite tri tochki A B C chtobi nаiti dlinnu AB & BC & summu"<<"\nA=";
   cin >> A;
   cout <<"B=";
   cin >> B;
