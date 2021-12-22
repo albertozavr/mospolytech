@@ -67,3 +67,24 @@ int main()
 //5. Дано вещественное число A и целое число N (> 0). Используя один цикл, найти значение выражения 
 //1 − A + A2 − A3 + . . . ± AN . 
 //Условный оператор не использовать.
+#include<iostream>
+#include<locale.h>
+#include<math.h>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	double N, A, k, i=0, j=0;
+	cout << "ââåäèòå ÷èñëî => ";
+	cin >> A;
+	cout << "ââåäèòå ñòåïåíü =>";
+	cin >> N;
+	A=-A;
+	for ( k=0 ; k <= N; k++){
+		i=pow(A,k);
+		j+=i;
+		cout <<i<<endl;
+	}
+		cout <<" ñóììà =>"<<j<<endl;
+	return 0;
+}
