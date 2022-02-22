@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+main()
+{
+	int a,b;
+	cout<<"Vvedite a i b \na=";
+	cin>>a;
+	cout<<"b=";
+	cin>>b;
+	if (a == b){
+		a=0;
+		b=0;
+		cout<<"\na="<<a<<"\nb="<<b;
+	}
+	else if (a > b){
+			b=a;
+			cout<<"a="<<a<<"\nb="<<b;
+	}
+	else if (a < b){
+			a = b;
+			cout<<"a="<<a<<"\nb="<<b;
+		}
+	else{
+		cout<<"no result";
+		
+	}
+	
+	return 0;
+}
